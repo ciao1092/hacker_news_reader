@@ -22262,13 +22262,14 @@ aiv:function aiv(a){this.a=a},
 w1:function w1(a,b,c){this.c=a
 this.d=b
 this.a=c},
-b_3(){return new A.Rg(null,null,A.a([],t.ZP),$.aQ())},
-Rg:function Rg(a,b,c,d){var _=this
-_.c=a
-_.d=b
-_.f=c
+b_3(a){return new A.Rg(a,null,null,A.a([],t.ZP),$.aQ())},
+Rg:function Rg(a,b,c,d,e){var _=this
+_.as=a
+_.c=b
+_.d=c
+_.f=d
 _.a7$=0
-_.aj$=d
+_.aj$=e
 _.v$=_.aO$=0},
 rs:function rs(a,b,c,d,e,f,g){var _=this
 _.r=a
@@ -76924,7 +76925,7 @@ if(s.aG!=null){s.aG=a
 return}if(s.ax==null){s.aB=a
 return}s.hN(s.uA(a))},
 Y0(a,b,c){var s=null,r=$.aQ()
-r=new A.ps(0,1,B.hs,a,b,!0,s,new A.eF(!1,r),r)
+r=new A.ps(this.as,1,B.hs,a,b,!0,s,new A.eF(!1,r),r)
 r.P1(b,s,!0,c,a)
 r.P2(b,s,s,!0,c,a)
 return r},
@@ -77079,11 +77080,12 @@ gp8(){return!1}}
 A.DG.prototype={
 al(){return new A.ZF()}}
 A.ZF.prototype={
-aF(){var s=this
-s.aX()
-s.Sf()
-s.e===$&&A.b()
-s.d=0},
+aF(){var s,r=this
+r.aX()
+r.Sf()
+s=r.e
+s===$&&A.b()
+r.d=s.as},
 l(){this.a.toString
 this.aJ()},
 Sf(){var s=this.a.r
@@ -86549,7 +86551,7 @@ I(a){var s=null
 return new A.CZ(new A.EQ(s),"Hacker News",A.aqg(B.aj,A.aFL(B.aj,s,s,B.v1),!0),A.aqg(B.ay,A.aFL(B.ay,s,s,B.v1),!0),B.Bf,s)}}
 A.EQ.prototype={
 al(){var s=t.kK
-return new A.a0u(A.b_3(),A.a([new A.qT("New stories","https://hacker-news.firebaseio.com/v0/newstories.json",new A.dq("new",s)),new A.qT("Top stories","https://hacker-news.firebaseio.com/v0/topstories.json",new A.dq("top",s)),new A.qT("Best stories","https://hacker-news.firebaseio.com/v0/beststories.json",new A.dq("best",s))],t.p))}}
+return new A.a0u(A.b_3(1),A.a([new A.qT("New stories","https://hacker-news.firebaseio.com/v0/newstories.json",new A.dq("new",s)),new A.qT("Top stories","https://hacker-news.firebaseio.com/v0/topstories.json",new A.dq("top",s)),new A.qT("Best stories","https://hacker-news.firebaseio.com/v0/beststories.json",new A.dq("best",s))],t.p))}}
 A.a0u.prototype={
 I(a){var s,r=this,q=null,p=r.d,o=A.S([null,0],t.LO,t.S),n=p.f
 if(n.length!==0){n=t.gQ.a(B.b.gbW(n)).gLQ()
