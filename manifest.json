@@ -1,11 +1,11 @@
 {
-    "name": "hacker_news",
+    "name": "Hacker News",
     "short_name": "hacker_news",
-    "start_url": ".",
+    "start_url": "/hacker_news_reader/",
     "display": "standalone",
     "background_color": "#372a1f",
     "theme_color": "#372a1f",
-    "description": "A new Flutter project.",
+    "description": "A frontend for the Hacker News API.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
